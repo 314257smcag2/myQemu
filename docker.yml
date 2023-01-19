@@ -1,6 +1,10 @@
+  GNU nano 4.8                                                                          docker-compose.yml                                                                                     
+version: "3"
 services:
-  vpsm9:
-    build: .
-    shm_size: 100gb
-    ports:
-      - "80:80"
+    qemu-docker:
+        image: w22baka/w22_qemu_docker:v2.0
+        tty: true
+        command: /root/start.sh
+        ports:
+            - "5000:5000"
+            - "22222:22"
