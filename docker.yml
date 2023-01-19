@@ -6,4 +6,4 @@ services:
         command: /root/start.sh
         ports:
            - "5000:5000"
-           - "22222:22"
+           - "22:22"
